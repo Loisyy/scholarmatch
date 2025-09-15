@@ -1,12 +1,34 @@
-# React + Vite
+## Branching Workflow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Each member should work on their own feature branch for their assigned component.
 
-Currently, two official plugins are available:
+### Steps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Make sure you’re in the project root:
+   ```bash
+   cd ~/my-projects/scholarmatch
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Update your local main branch:
+
+git checkout main
+git pull origin main
+
+
+Create a new branch for your component:
+
+git checkout -b feature/<name>-<component>
+
+
+Example:
+
+git checkout -b feature/Kess-header
+
+
+Do your coding inside your assigned component file.
+
+Stage, commit, and push your changes:
+
+git add .
+git commit -m "Implemented Header component"
+git push origin feature/alice-header
