@@ -1,0 +1,282 @@
+/* This is for global styling  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Etra plugins */
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+
+  /* Adding custom earth and accent color variables to match the design */
+  --earth-50: #fdf8f6;
+  --earth-100: #f2e8e5;
+  --earth-200: #eaddd7;
+  --earth-300: #e0cec7;
+  --earth-400: #d2bab0;
+  --earth-500: #bfa094;
+  --earth-600: #a18072;
+  --earth-700: #977669;
+  --earth-800: #846358;
+  --earth-900: #43302b;
+  --accent-purple: #8b5cf6;
+  --accent-teal: #14b8a6;
+  --accent-coral: #f97316;
+  --accent-rose: #e11d48;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Adding custom earth and accent color utilities */
+  --color-earth-50: var(--earth-50);
+  --color-earth-100: var(--earth-100);
+  --color-earth-200: var(--earth-200);
+  --color-earth-300: var(--earth-300);
+  --color-earth-400: var(--earth-400);
+  --color-earth-500: var(--earth-500);
+  --color-earth-600: var(--earth-600);
+  --color-earth-700: var(--earth-700);
+  --color-earth-800: var(--earth-800);
+  --color-earth-900: var(--earth-900);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-teal: var(--accent-teal);
+  --color-accent-coral: var(--accent-coral);
+  --color-accent-rose: var(--accent-rose);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black; /* fallback until you configure colors */
+  }
+}
+
+/* Adding custom utility classes for the earth and accent colors */
+@layer utilities {
+  .bg-earth-50 {
+    background-color: var(--color-earth-50);
+  }
+  .bg-earth-100 {
+    background-color: var(--color-earth-100);
+  }
+  .bg-earth-200 {
+    background-color: var(--color-earth-200);
+  }
+  .bg-earth-300 {
+    background-color: var(--color-earth-300);
+  }
+  .bg-earth-400 {
+    background-color: var(--color-earth-400);
+  }
+  .bg-earth-500 {
+    background-color: var(--color-earth-500);
+  }
+  .bg-earth-600 {
+    background-color: var(--color-earth-600);
+  }
+  .bg-earth-700 {
+    background-color: var(--color-earth-700);
+  }
+  .bg-earth-800 {
+    background-color: var(--color-earth-800);
+  }
+  .bg-earth-900 {
+    background-color: var(--color-earth-900);
+  }
+
+  .text-earth-50 {
+    color: var(--color-earth-50);
+  }
+  .text-earth-100 {
+    color: var(--color-earth-100);
+  }
+  .text-earth-200 {
+    color: var(--color-earth-200);
+  }
+  .text-earth-300 {
+    color: var(--color-earth-300);
+  }
+  .text-earth-400 {
+    color: var(--color-earth-400);
+  }
+  .text-earth-500 {
+    color: var(--color-earth-500);
+  }
+  .text-earth-600 {
+    color: var(--color-earth-600);
+  }
+  .text-earth-700 {
+    color: var(--color-earth-700);
+  }
+  .text-earth-800 {
+    color: var(--color-earth-800);
+  }
+  .text-earth-900 {
+    color: var(--color-earth-900);
+  }
+
+  .border-earth-200 {
+    border-color: var(--color-earth-200);
+  }
+  .border-earth-300 {
+    border-color: var(--color-earth-300);
+  }
+
+  .bg-accent-purple {
+    background-color: var(--color-accent-purple);
+  }
+  .bg-accent-teal {
+    background-color: var(--color-accent-teal);
+  }
+  .bg-accent-coral {
+    background-color: var(--color-accent-coral);
+  }
+  .bg-accent-rose {
+    background-color: var(--color-accent-rose);
+  }
+
+  .text-accent-purple {
+    color: var(--color-accent-purple);
+  }
+  .text-accent-teal {
+    color: var(--color-accent-teal);
+  }
+  .text-accent-coral {
+    color: var(--color-accent-coral);
+  }
+  .text-accent-rose {
+    color: var(--color-accent-rose);
+  }
+
+  .from-accent-purple {
+    --tw-gradient-from: var(--color-accent-purple);
+  }
+  .to-accent-purple {
+    --tw-gradient-to: var(--color-accent-purple);
+  }
+  .from-accent-teal {
+    --tw-gradient-from: var(--color-accent-teal);
+  }
+  .to-accent-teal {
+    --tw-gradient-to: var(--color-accent-teal);
+  }
+  .from-accent-coral {
+    --tw-gradient-from: var(--color-accent-coral);
+  }
+  .to-accent-coral {
+    --tw-gradient-to: var(--color-accent-coral);
+  }
+  .from-accent-rose {
+    --tw-gradient-from: var(--color-accent-rose);
+  }
+  .to-accent-rose {
+    --tw-gradient-to: var(--color-accent-rose);
+  }
+}
