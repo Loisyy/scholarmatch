@@ -86,7 +86,7 @@ export default function HeroSection() {
                     Google Women Techmakers Scholarship
                   </h3>
                   <p className="text-sm text-earth-600 mt-1">
-                    Full tuition + mentorship program
+                   Waived tuition + mentorship program
                   </p>
                 </div>
               </div>

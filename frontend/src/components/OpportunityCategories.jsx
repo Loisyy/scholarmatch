@@ -3,7 +3,7 @@ export default function OpportunityCategories() {
     {
       title: "Scholarships",
       description:
-        "Full and partial scholarships for undergraduate and graduate programs in computer science, engineering, and related fields.",
+        "Full and partial scholarships and Bootcamps for undergraduate and graduate programs in computer science, engineering, and related fields ad Women interest in Stem.",
       icon: "🎓",
       gradient: "from-accent-purple to-accent-purple/80",
       stats: [

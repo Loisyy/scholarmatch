@@ -66,7 +66,7 @@ export default function UserProfiles() {
                 <div className="mb-8">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-earth-900">Kemi Adebayo</h3>
+                      <h3 className="text-2xl font-bold text-earth-900">Doris Owoeye</h3>
                       <p className="text-earth-600">Computer Science Student • University of Lagos</p>
                       <p className="text-sm text-earth-500 mt-1">Lagos, Nigeria • Available for remote opportunities</p>
                     </div>

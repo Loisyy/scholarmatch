@@ -105,14 +105,14 @@ export default function DashboardPreview() {
                           </span>
                         </div>
                         <h5 className="font-semibold text-earth-900 mb-1">
-                          Anita Borg Scholarship
+                          SheCodes Africa Scholarship
                         </h5>
                         <p className="text-sm text-earth-600 mb-3">
-                          Full scholarship for computer science studies
+                          Full scholarship for African women in stem
                         </p>
                         <div className="flex items-center space-x-4 text-xs text-earth-500">
-                          <span>🎓 Bachelor's/Master's</span>
-                          <span>💰 $10,000</span>
+                          <span>🎓 Bootcamps/Fellowship</span>
+                          <span>save 💰 $10,000</span>
                           <span>🌍 Global</span>
                         </div>
                       </div>
@@ -192,7 +192,7 @@ export default function DashboardPreview() {
                     <div className="w-3 h-3 bg-accent-purple rounded-full"></div>
                     <div className="flex-1">
                       <div className="font-medium text-earth-900 text-sm">
-                        Anita Borg Fund
+                        SheCodes Africa
                       </div>
                       <div className="text-xs text-earth-600">12 days left</div>
                     </div>
