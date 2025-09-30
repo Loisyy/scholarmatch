@@ -68,7 +68,7 @@ export default function Header() {
             </Link>
 
             <Link to="/register" className="bg-gradient-to-r from-accent-purple to-accent-teal text-white px-6 py-2 rounded-lg text-sm font-medium hover:shadow-lg transition-all">
-              Register/Sign Up 
+              Jion Us
             </Link>
 
             {/* Profile Avatar */}
